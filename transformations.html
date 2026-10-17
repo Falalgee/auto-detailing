@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121315" />
+
+  <title>Archival Work — Obsidian Auto Studio</title>
+  <meta name="description" content="Documented case studies of multi-stage paint rectification, swirl remediation, and ceramic optical depth engineered for museum-grade coachwork." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e10'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='700' fill='%23b3c5ff'%3EO%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#343537",
+            "tertiary-fixed-dim": "#c3c6d2",
+            "primary": "#b3c5ff",
+            "on-tertiary-fixed": "#181c24",
+            "inverse-on-surface": "#303033",
+            "surface-variant": "#343537",
+            "surface-container-lowest": "#0d0e10",
+            "outline-variant": "#424656",
+            "surface": "#121315",
+            "outline": "#8c90a1",
+            "surface-tint": "#b3c5ff",
+            "on-tertiary-fixed-variant": "#434750",
+            "on-primary": "#002b75",
+            "on-primary-fixed": "#001849",
+            "primary-fixed-dim": "#b3c5ff",
+            "secondary-fixed-dim": "#c4c7cc",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-container": "#f8f8ff",
+            "secondary": "#c4c7cc",
+            "on-surface-variant": "#c2c6d8",
+            "inverse-primary": "#0054d6",
+            "on-secondary-fixed-variant": "#43474b",
+            "on-primary-container": "#f8f7ff",
+            "on-surface": "#e3e2e5",
+            "inverse-surface": "#e3e2e5",
+            "secondary-fixed": "#e0e3e8",
+            "on-secondary-fixed": "#181c20",
+            "error-container": "#93000a",
+            "on-tertiary": "#2c3039",
+            "surface-bright": "#38393b",
+            "on-secondary-container": "#b5b9bd",
+            "tertiary-container": "#6e727c",
+            "secondary-container": "#46494e",
+            "tertiary": "#c3c6d2",
+            "surface-container": "#1f2022",
+            "error": "#ffb4ab",
+            "on-background": "#e3e2e5",
+            "background": "#121315",
+            "on-error": "#690005",
+            "surface-container-low": "#1b1c1e",
+            "surface-dim": "#121315",
+            "primary-fixed": "#dae1ff",
+            "on-secondary": "#2d3135",
+            "tertiary-fixed": "#dfe2ee",
+            "surface-container-high": "#292a2c",
+            "primary-container": "#0066ff",
+            "on-primary-fixed-variant": "#003fa4"
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          spacing: {
+            "space-sm": "0.5rem",
+            "space-xl": "3.5rem",
+            "space-xs": "0.25rem",
+            gutter: "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            margin: "4rem"
+          },
+          fontFamily: {
+            "body-lg": ["Manrope"],
+            "headline-sm": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-sm": ["Manrope"],
+            "label-caps": ["Space Grotesk"],
+            "display-xl": ["Syne"],
+            "label-mono": ["Space Grotesk"],
+            "headline-lg": ["Syne"],
+            "display-xl-mobile": ["Syne"],
+            "body-md": ["Manrope"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "display-xl": ["64px", { lineHeight: "68px", letterSpacing: "-0.025em", fontWeight: "700" }],
+            "label-mono": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "display-xl-mobile": ["40px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; -webkit-font-smoothing: antialiased; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    [hidden] { display: none !important; }
+    main { scroll-margin-top: 5rem; }
+
+    :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+      outline: 2px solid #b3c5ff;
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 100;
+      padding: 0.75rem 1.25rem;
+      background: #0066ff;
+      color: #f8f7ff;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      user-select: none;
+    }
+
+    /* Before/After Slider */
+    [data-ba] { touch-action: pan-y; cursor: ew-resize; }
+    [data-ba-handle][data-dragging="true"] { cursor: grabbing; }
+  </style>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <div class="h-16 max-w-7xl mx-auto px-gutter-mobile md:px-margin flex items-center justify-between gap-6">
+
+      <a href="index.html" title="Open index.html" aria-label="Obsidian Auto Studio — home" class="flex flex-col justify-center flex-shrink-0 group">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1 group-hover:text-primary transition-colors">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Primary">
+        <a href="index.html" title="Open index.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Home</a>
+        <a href="services.html" title="Open services.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Services</a>
+        <a href="packages.html" title="Open packages.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Packages</a>
+        <a href="transformations.html" title="Open transformations.html" aria-current="page" class="px-3 py-2 rounded-lg text-body-sm text-on-surface bg-surface-container-high font-medium">Transformations</a>
+        <a href="about.html" title="Open about.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">About</a>
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Enquire</a>
+      </nav>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="hidden md:inline-flex items-center justify-center h-9 px-4 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+          Reserve Studio Bay
+        </a>
+        <button
+          type="button"
+          data-mobile-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          class="lg:hidden w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+        >
+          <span class="material-symbols-outlined text-[24px]" aria-hidden="true">menu</span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================= MOBILE NAV ============================= -->
+  <div data-mobile-nav-backdrop hidden class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm lg:hidden" aria-hidden="true"></div>
+
+  <div
+    id="mobile-nav-panel"
+    data-mobile-nav-panel
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="Site navigation"
+    class="fixed top-0 right-0 bottom-0 z-[61] w-full max-w-sm bg-surface-container-low border-l border-outline-variant/30 shadow-2xl flex flex-col lg:hidden"
+  >
+    <div class="h-16 px-gutter-mobile flex items-center justify-between border-b border-outline-variant/30 flex-shrink-0">
+      <div class="flex flex-col justify-center">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </div>
+      <button
+        type="button"
+        data-mobile-nav-close
+        class="w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+      >
+        <span class="material-symbols-outlined text-[24px]" aria-hidden="true">close</span>
+        <span class="sr-only">Close menu</span>
+      </button>
+    </div>
+
+    <nav class="flex-1 overflow-y-auto p-4 flex flex-col gap-1" aria-label="Primary mobile">
+      <a href="index.html" title="Open index.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Home</a>
+      <a href="services.html" title="Open services.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Services</a>
+      <a href="packages.html" title="Open packages.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Packages</a>
+      <a href="transformations.html" title="Open transformations.html" aria-current="page" class="px-4 py-3 rounded-lg text-on-surface bg-surface-container-high text-body-md font-medium">Transformations</a>
+      <a href="about.html" title="Open about.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">About</a>
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Enquire / Booking</a>
+    </nav>
+
+    <div class="p-4 border-t border-outline-variant/30 flex-shrink-0">
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+        Reserve Studio Bay
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================= MAIN ============================= -->
+  <main id="main" class="w-full pt-16 bg-surface min-h-[calc(100vh-20rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- ================= HEADER ================= -->
+      <section class="relative w-full border-b border-outline-variant/20" aria-labelledby="transformations-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin pt-16 pb-12 md:pt-24 md:pb-16">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+            <div class="lg:col-span-8 max-w-3xl">
+              <!-- Added break-words to fix the overflow -->
+              <h1 id="transformations-heading" class="font-display-xl text-[32px] sm:text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight mb-6 break-words">
+                Studio Transformations.
+              </h1>
+              <p class="font-body-lg text-body-lg text-secondary">
+                Documented case studies of multi-stage paint rectification, swirl remediation, and ceramic optical depth engineered for museum-grade, low-tolerance coachwork.
+              </p>
+            </div>
+            
+            <!-- Fixed Metrics Block -->
+            <div class="lg:col-span-4 w-full flex justify-start lg:justify-end">
+              <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 p-5 rounded-xl bg-surface-container-low border border-outline-variant/20 w-full lg:w-auto">
+                <div class="flex flex-col items-center sm:items-start w-full sm:w-auto">
+                  <span class="text-xl font-bold text-on-surface whitespace-nowrap">1,480+</span>
+                  <span class="text-[11px] text-secondary uppercase tracking-wider mt-1 whitespace-nowrap">Hours Documented</span>
+                </div>
+                <div class="hidden sm:block w-px h-8 bg-outline-variant/30" aria-hidden="true"></div>
+                <div class="flex flex-col items-center sm:items-start w-full sm:w-auto">
+                  <span class="text-xl font-bold text-primary whitespace-nowrap">99.4%</span>
+                  <span class="text-[11px] text-secondary uppercase tracking-wider mt-1 whitespace-nowrap">Defect Erasure</span>
+                </div>
+                <div class="hidden sm:block w-px h-8 bg-outline-variant/30" aria-hidden="true"></div>
+                <div class="flex flex-col items-center sm:items-start w-full sm:w-auto">
+                  <span class="text-xl font-bold text-on-surface whitespace-nowrap">&lt; 3.0µ</span>
+                  <span class="text-[11px] text-secondary uppercase tracking-wider mt-1 whitespace-nowrap">Mean Clear Loss</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FILTERS ================= -->
+      <section class="w-full border-b border-outline-variant/20 sticky top-16 z-40 bg-surface/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+          <div class="flex items-center gap-2 overflow-x-auto py-4 scrollbar-none -mx-gutter-mobile px-gutter-mobile md:mx-0 md:px-0">
+            <button data-filter-btn="all" class="px-4 py-2 rounded-lg text-body-sm font-medium whitespace-nowrap bg-surface-container-high text-on-surface transition-colors shrink-0">All Works</button>
+            <button data-filter-btn="multi-stage" class="px-4 py-2 rounded-lg text-body-sm font-medium whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors shrink-0">Multi-Stage Correction</button>
+            <button data-filter-btn="nanoceramic" class="px-4 py-2 rounded-lg text-body-sm font-medium whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors shrink-0">Nanoceramic Shielding</button>
+            <button data-filter-btn="hypercar" class="px-4 py-2 rounded-lg text-body-sm font-medium whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors shrink-0">Exotic & Hypercar</button>
+            <button data-filter-btn="vintage" class="px-4 py-2 rounded-lg text-body-sm font-medium whitespace-nowrap text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors shrink-0">Vintage & Modern Classic</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CASE STUDIES ================= -->
+      <section class="w-full py-16 md:py-24" aria-label="Case Studies">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin flex flex-col gap-16 md:gap-24" id="case-study-grid">
+
+          <!-- Case 01 -->
+          <article data-case-card data-category="multi-stage hypercar nanoceramic" class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <!-- Slider -->
+            <div class="lg:col-span-7">
+              <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 select-none" data-ba>
+                <!-- After (Clean) -->
+                <img
+                  src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1200&auto=format&fit=crop"
+                  alt="Clean automotive clear coat."
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  loading="lazy" width="1000" height="625"
+                />
+                <!-- Before (Swirled, Filtered) -->
+                <div data-ba-clip class="absolute inset-0" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                  <img
+                    src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1200&auto=format&fit=crop"
+                    alt="" aria-hidden="true"
+                    class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    loading="lazy" width="1000" height="625"
+                    style="filter: grayscale(100%) brightness(0.5) contrast(1.8);"
+                  />
+                  <!-- Noise overlay for swirl simulation -->
+                  <div class="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'noise\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'3\' stitchTiles=\'stitch\'/></filter><rect width=\'100%\' height=\'100%\' filter=\'url(%23noise)\' opacity=\'0.6\'/></svg>');"></div>
+                </div>
+                <!-- Handle -->
+                <div data-ba-handle class="absolute inset-y-0 z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+                  <div class="w-px h-full bg-primary-fixed mx-auto" aria-hidden="true"></div>
+                  <div
+                    role="slider"
+                    tabindex="0"
+                    aria-label="Drag or use arrow keys to compare before and after"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                    aria-valuetext="Divider at 50 percent"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/50 shadow-lg flex items-center justify-center text-on-surface pointer-events-auto cursor-ew-resize hover:bg-surface-bright transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_left</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+                  </div>
+                </div>
+              </div>
+              <p class="font-body-sm text-body-sm text-outline mt-3 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]" aria-hidden="true">drag_indicator</span>
+                Drag or use ← → keys to inspect optical substrate
+              </p>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Ferrari 812 Competizione</h2>
+                <p class="text-body-sm text-secondary uppercase tracking-wider mb-6">Nero Daytona Metallic • 90-Hour Atelier Rectification</p>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed mb-8">
+                  Delivered straight from maritime transit with severe dealer-induced rotary wash gouges and factory orange peel irregularity. Required 4 distinct compound stages using diminishing micro-abrasives to preserve critical factory clear coat.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Pre-Op Density</span>
+                    <span class="text-body-md text-on-surface font-medium">122.4 µm</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Final Stabilized</span>
+                    <span class="text-body-md text-primary font-medium">119.8 µm</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Optical Gloss Units</span>
+                    <span class="text-body-md text-primary font-medium">99.1 GU</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Protection System</span>
+                    <span class="text-body-md text-on-surface font-medium">Quartz 9H</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Lead Artisan: M. Falalu</span>
+                <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center gap-1 text-body-sm text-primary hover:text-on-surface transition-colors font-medium">
+                  Request Similar <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 02 -->
+          <article data-case-card data-category="multi-stage hypercar nanoceramic" class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <!-- Slider (Order flipped on desktop) -->
+            <div class="lg:col-span-7 lg:order-2">
+              <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 select-none" data-ba>
+                <img
+                  src="https://images.unsplash.com/photo-1503376712351-1f28f6e98a3f?q=80&w=1200&auto=format&fit=crop"
+                  alt="Clean Porsche 911 GT3 RS front wing."
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  loading="lazy" width="1000" height="625"
+                />
+                <div data-ba-clip class="absolute inset-0" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                  <img
+                    src="https://images.unsplash.com/photo-1503376712351-1f28f6e98a3f?q=80&w=1200&auto=format&fit=crop"
+                    alt="" aria-hidden="true"
+                    class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    loading="lazy" width="1000" height="625"
+                    style="filter: grayscale(100%) brightness(0.6) contrast(1.5);"
+                  />
+                  <div class="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'noise\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'3\' stitchTiles=\'stitch\'/></filter><rect width=\'100%\' height=\'100%\' filter=\'url(%23noise)\' opacity=\'0.6\'/></svg>');"></div>
+                </div>
+                <div data-ba-handle class="absolute inset-y-0 z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+                  <div class="w-px h-full bg-primary-fixed mx-auto" aria-hidden="true"></div>
+                  <div
+                    role="slider" tabindex="0"
+                    aria-label="Drag or use arrow keys to compare before and after"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="Divider at 50 percent"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/50 shadow-lg flex items-center justify-center text-on-surface pointer-events-auto cursor-ew-resize hover:bg-surface-bright transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_left</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+                  </div>
+                </div>
+              </div>
+              <p class="font-body-sm text-body-sm text-outline mt-3 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]" aria-hidden="true">drag_indicator</span>
+                Drag or use ← → keys to inspect optical substrate
+              </p>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="lg:col-span-5 lg:order-1 flex flex-col justify-between">
+              <div>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Porsche 911 GT3 RS</h2>
+                <p class="text-body-sm text-secondary uppercase tracking-wider mb-6">Arctic Grey (Weissach) • Track Rash Remediation</p>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed mb-8">
+                  Following 1,200 km of high-downforce circuit use, the front clip and aero louvers incurred high-velocity marble marring. We executed non-invasive thermal recovery, followed by custom bulk-cut self-healing PPF and dual-layer hydrophobic ceramic topcoat.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Film Caliber</span>
+                    <span class="text-body-md text-on-surface font-medium">8.5 mil Urethane</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Hydrophobic Angle</span>
+                    <span class="text-body-md text-primary font-medium">118° Contact</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Panel Coverage</span>
+                    <span class="text-body-md text-on-surface font-medium">100% Disassembled</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Atelier Duration</span>
+                    <span class="text-body-md text-on-surface font-medium">72 Bay Hours</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Lead Artisan: K. Thorne</span>
+                <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center gap-1 text-body-sm text-primary hover:text-on-surface transition-colors font-medium">
+                  Request Similar <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 03 -->
+          <article data-case-card data-category="vintage multi-stage nanoceramic" class="group grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <!-- Slider -->
+            <div class="lg:col-span-7">
+              <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 select-none" data-ba>
+                <img
+                  src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1200&auto=format&fit=crop"
+                  alt="Aston Martin DBS deep metallic Mariana Blue body panel."
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  loading="lazy" width="1000" height="625"
+                />
+                <div data-ba-clip class="absolute inset-0" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                  <img
+                    src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?q=80&w=1200&auto=format&fit=crop"
+                    alt="" aria-hidden="true"
+                    class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    loading="lazy" width="1000" height="625"
+                    style="filter: grayscale(80%) brightness(0.4) contrast(2.1);"
+                  />
+                  <div class="absolute inset-0 opacity-50 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'noise\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'3\' stitchTiles=\'stitch\'/></filter><rect width=\'100%\' height=\'100%\' filter=\'url(%23noise)\' opacity=\'0.6\'/></svg>');"></div>
+                </div>
+                <div data-ba-handle class="absolute inset-y-0 z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+                  <div class="w-px h-full bg-primary-fixed mx-auto" aria-hidden="true"></div>
+                  <div
+                    role="slider" tabindex="0"
+                    aria-label="Drag or use arrow keys to compare before and after"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="Divider at 50 percent"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/50 shadow-lg flex items-center justify-center text-on-surface pointer-events-auto cursor-ew-resize hover:bg-surface-bright transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_left</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+                  </div>
+                </div>
+              </div>
+              <p class="font-body-sm text-body-sm text-outline mt-3 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]" aria-hidden="true">drag_indicator</span>
+                Drag or use ← → keys to inspect optical substrate
+              </p>
+            </div>
+
+            <!-- Technical Details -->
+            <div class="lg:col-span-5 flex flex-col justify-between">
+              <div>
+                <h2 class="font-headline-md text-headline-md text-on-surface mb-2">Aston Martin DBS V12</h2>
+                <p class="text-body-sm text-secondary uppercase tracking-wider mb-6">Mariana Blue • 12-Year Swirl Reversal</p>
+                <p class="font-body-md text-body-md text-secondary leading-relaxed mb-8">
+                  Suffered severe automated mechanical car-wash degradation over multiple ownership tenures. Our team executed jeweling compound procedures with bespoke pad densities to restore the deep metallic flake luster without thinning delicate edge clearances.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Pre-Op DOI</span>
+                    <span class="text-body-md text-secondary font-medium">64% Clouded</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Final DOI</span>
+                    <span class="text-body-md text-primary font-medium">98.8% Mirror</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Clear Stock Consumed</span>
+                    <span class="text-body-md text-on-surface font-medium">2.1 µm</span>
+                  </div>
+                  <div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/20">
+                    <span class="text-[11px] text-secondary uppercase tracking-wider block mb-1">Curing Protocol</span>
+                    <span class="text-body-md text-on-surface font-medium">Shortwave IR 60°C</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-6 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Lead Artisan: S. Laurent</span>
+                <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center gap-1 text-body-sm text-primary hover:text-on-surface transition-colors font-medium">
+                  Request Similar <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ================= LIGHT TUNNEL ================= -->
+      <section class="w-full bg-surface-container-lowest border-t border-b border-outline-variant/20" aria-labelledby="tunnel-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-5 flex flex-col">
+              <h2 id="tunnel-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">The Calibrated Light Tunnel</h2>
+              <p class="font-body-md text-body-md text-secondary leading-relaxed mb-6">
+                Sunlight is naturally forgiving, scattering off environmental reflections that disguise sub-surface swirl marks and rotary gouges. Inside Obsidian's bespoke subterranean inspection tunnel, we isolate paint under 5,000K daylight-balanced luminaire arrays.
+              </p>
+              
+              <div class="space-y-6 mt-4">
+                <div class="flex items-start gap-4">
+                  <span class="text-body-sm font-mono text-primary pt-0.5">01</span>
+                  <div>
+                    <h3 class="text-body-md font-semibold text-on-surface mb-1">High CRI Spectrum Arrays</h3>
+                    <p class="text-body-sm text-secondary">Ra 98+ color rendering exposes true pigment undertones, orange peel waviness, and micro-holograms impossible to detect under standard shop halogens.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="text-body-sm font-mono text-primary pt-0.5">02</span>
+                  <div>
+                    <h3 class="text-body-md font-semibold text-on-surface mb-1">Coaxial Spot & Linear Grazing Emitters</h3>
+                    <p class="text-body-sm text-secondary">Raking angle fixtures cast acute shadows over sanding pigtails, resin sink marks, and dry-spray textures across complex curvilinear panels.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="text-body-sm font-mono text-primary pt-0.5">03</span>
+                  <div>
+                    <h3 class="text-body-md font-semibold text-on-surface mb-1">Zero Ambient Stray Scatter</h3>
+                    <p class="text-body-sm text-secondary">Matte carbon-black chamber walls extinguish parasitic reflections, guaranteeing that only the vehicle clear coat speaks.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="relative w-full aspect-[16/10] rounded-xl overflow-hidden border border-outline-variant/20">
+                <img
+                  src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1200&auto=format&fit=crop"
+                  alt="Modern automotive detailing light tunnel with geometric LED arches."
+                  class="w-full h-full object-cover"
+                  loading="lazy" width="1000" height="625"
+                />
+              </div>
+              <div class="grid grid-cols-3 gap-4 mt-6">
+                <div class="p-4 rounded-lg bg-surface-container border border-outline-variant/20 text-center">
+                  <span class="block text-body-sm font-medium text-on-surface mb-1">45% Flaws Masked</span>
+                  <span class="text-[11px] text-secondary">Natural Sunlight</span>
+                </div>
+                <div class="p-4 rounded-lg bg-surface-container border border-outline-variant/20 text-center">
+                  <span class="block text-body-sm font-medium text-on-surface mb-1">30% Flaws Masked</span>
+                  <span class="text-[11px] text-secondary">Standard Bay</span>
+                </div>
+                <div class="p-4 rounded-lg bg-surface-container-high border border-primary/30 text-center">
+                  <span class="block text-body-sm font-medium text-primary mb-1">100% Optical Truth</span>
+                  <span class="text-[11px] text-primary/70">Obsidian Tunnel</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+      <section class="w-full bg-surface py-20 md:py-24" aria-labelledby="cta-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 md:p-12 rounded-xl bg-surface-container border border-outline-variant/20">
+            <div class="max-w-2xl">
+              <h2 id="cta-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">Have a vehicle requiring restoration?</h2>
+              <p class="font-body-md text-body-md text-secondary">
+                Our atelier accepts four simultaneous consignments per monthly cycle to preserve uncompromising standards of optical refinement.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
+              <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center justify-center h-11 px-6 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+                Submit Studio Inquiry
+              </a>
+              <a href="packages.html" title="Open packages.html" class="inline-flex items-center justify-center h-11 px-6 rounded-lg border border-outline-variant/40 text-on-surface text-label-caps uppercase tracking-wide font-semibold hover:bg-surface-container-high transition-colors">
+                Review Pricing & Bay Tiers
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="w-full bg-[#090A0C] border-t border-[#23262F] pt-space-xl pb-space-lg text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-lg border-b border-outline-variant/30">
+
+        <div class="lg:col-span-5 flex flex-col gap-space-sm">
+          <div class="flex flex-col justify-center">
+            <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+            <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary max-w-md mt-2">
+            Bespoke preservation, multi-stage mirror clear coat correction, and advanced surface protection engineered for museum-grade and rare kinetic art.
+          </p>
+          <div class="mt-space-sm flex items-center gap-2">
+            <span class="text-body-sm text-outline">Portfolio curation:</span>
+            <span class="text-body-sm text-primary">Falalu Creative Studio</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Atelier Locations</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Bay 04, Apex Atelier Boulevard</p>
+          <p class="font-body-sm text-body-sm text-secondary">London W1K • Geneva 1204</p>
+          <p class="font-body-sm text-body-sm text-secondary mt-3">+44 (0) 20 7946 0882</p>
+          <p class="font-body-sm text-body-sm text-secondary">concierge@obsidianautostudio.ch</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Studio Hours</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Mon – Fri: 08:00 – 19:00 GMT</p>
+          <p class="font-body-sm text-body-sm text-secondary">Saturday: Inspections only</p>
+          <p class="font-body-sm text-body-sm text-secondary">Sunday: Storage transit</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Standards</span>
+          <nav class="flex flex-col gap-1.5" aria-label="Standards and craft">
+            <a href="standards.html#craftsmanship" title="Open standards.html#craftsmanship" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Craftsmanship Charter</a>
+            <a href="standards.html#preservation" title="Open standards.html#preservation" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Preservation Protocol</a>
+            <a href="standards.html#privacy" title="Open standards.html#privacy" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Privacy &amp; Discretion</a>
+            <a href="standards.html#legal" title="Open standards.html#legal" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Legal &amp; Provenance</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="pt-space-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+        <p class="font-body-sm text-body-sm text-secondary max-w-4xl text-left">
+          Obsidian Auto Studio is a fictional brand concept created by Falalu Creative Studio. All performance figures, pricing, names, and reviews shown are illustrative for demonstration purposes and are not guarantees of durability or specific paint outcomes.
+        </p>
+        <span class="text-body-sm text-outline flex-shrink-0">© 2025 Falalu Creative Studio. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= SCRIPTS ============================= -->
+  <script>
+    (function init() {
+      /* ----------------------------- Mobile Nav ----------------------------- */
+      const navToggle = document.querySelector('[data-mobile-nav-toggle]');
+      const navPanel = document.querySelector('[data-mobile-nav-panel]');
+      const navBackdrop = document.querySelector('[data-mobile-nav-backdrop]');
+      const navClose = document.querySelector('[data-mobile-nav-close]');
+
+      if (navToggle && navPanel && navBackdrop) {
+        const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+        let lastFocused = null;
+        let previouslyOverflow = '';
+
+        function openNav() {
+          lastFocused = document.activeElement;
+          navPanel.hidden = false;
+          navBackdrop.hidden = false;
+          navToggle.setAttribute('aria-expanded', 'true');
+          previouslyOverflow = document.body.style.overflow;
+          document.body.style.overflow = 'hidden';
+          const first = navPanel.querySelector(FOCUSABLE);
+          if (first) first.focus();
+        }
+
+        function closeNav() {
+          navPanel.hidden = true;
+          navBackdrop.hidden = true;
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = previouslyOverflow;
+          if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+        }
+
+        navToggle.addEventListener('click', function () {
+          if (navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+          else openNav();
+        });
+
+        if (navClose) navClose.addEventListener('click', closeNav);
+        navBackdrop.addEventListener('click', closeNav);
+
+        navPanel.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { e.preventDefault(); closeNav(); return; }
+          if (e.key !== 'Tab') return;
+          const focusables = Array.from(navPanel.querySelectorAll(FOCUSABLE)).filter(
+            function (el) { return el.offsetParent !== null; }
+          );
+          if (focusables.length === 0) return;
+          const first = focusables[0];
+          const last = focusables[focusables.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        });
+
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024 && navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+        });
+      }
+
+      /* --------------------- Before/After Comparators ---------------------- */
+      document.querySelectorAll('[data-ba]').forEach(function (root) {
+        const clip = root.querySelector('[data-ba-clip]');
+        const handle = root.querySelector('[data-ba-handle]');
+        const slider = handle && handle.querySelector('[role="slider"]');
+        if (!clip || !handle) return;
+
+        let dragging = false;
+
+        function applyPct(pct) {
+          const safe = Math.max(0, Math.min(100, pct));
+          clip.style.clipPath = 'polygon(0 0, ' + safe + '% 0, ' + safe + '% 100%, 0 100%)';
+          handle.style.left = safe + '%';
+          if (slider) {
+            slider.setAttribute('aria-valuenow', String(Math.round(safe)));
+            slider.setAttribute('aria-valuetext', 'Divider at ' + Math.round(safe) + ' percent');
+          }
+        }
+
+        function pctFromEvent(e) {
+          const rect = root.getBoundingClientRect();
+          const point = e.touches ? e.touches[0] : e;
+          return ((point.clientX - rect.left) / rect.width) * 100;
+        }
+
+        root.addEventListener('pointerdown', function (e) {
+          dragging = true;
+          handle.setAttribute('data-dragging', 'true');
+          applyPct(pctFromEvent(e));
+          if (root.setPointerCapture && e.pointerId != null) {
+            try { root.setPointerCapture(e.pointerId); } catch (_) {}
+          }
+        });
+
+        root.addEventListener('pointermove', function (e) {
+          if (!dragging) return;
+          applyPct(pctFromEvent(e));
+        });
+
+        function endDrag() {
+          dragging = false;
+          handle.removeAttribute('data-dragging');
+        }
+        root.addEventListener('pointerup', endDrag);
+        root.addEventListener('pointercancel', endDrag);
+        root.addEventListener('pointerleave', function () { if (!dragging) endDrag(); });
+
+        if (slider) {
+          slider.addEventListener('keydown', function (e) {
+            const current = parseFloat(slider.getAttribute('aria-valuenow') || '50');
+            let next = current;
+            if (e.key === 'ArrowLeft') next = current - 2;
+            else if (e.key === 'ArrowRight') next = current + 2;
+            else if (e.key === 'Home') next = 0;
+            else if (e.key === 'End') next = 100;
+            else return;
+            e.preventDefault();
+            applyPct(next);
+          });
+        }
+      });
+
+      /* ----------------------------- Case Filters ----------------------------- */
+      const filterButtons = document.querySelectorAll('[data-filter-btn]');
+      const caseCards = document.querySelectorAll('[data-case-card]');
+
+      if (filterButtons.length > 0 && caseCards.length > 0) {
+        filterButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            // Update active state
+            filterButtons.forEach(b => {
+              b.classList.remove('bg-surface-container-high', 'text-on-surface');
+              b.classList.add('text-on-surface-variant', 'hover:text-on-surface', 'hover:bg-surface-container-high/60');
+            });
+            btn.classList.remove('text-on-surface-variant', 'hover:text-on-surface', 'hover:bg-surface-container-high/60');
+            btn.classList.add('bg-surface-container-high', 'text-on-surface');
+
+            // Filter cards
+            const filter = btn.getAttribute('data-filter-btn');
+            caseCards.forEach(card => {
+              if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+                card.classList.remove('hidden');
+              } else {
+                card.classList.add('hidden');
+              }
+            });
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
