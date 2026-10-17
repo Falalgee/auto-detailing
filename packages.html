@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121315" />
+
+  <title>Commission Packages — Obsidian Auto Studio</title>
+  <meta name="description" content="Transparent, tiered treatments structured around depth of correction and protective longevity. Explore our bespoke automotive preservation packages." />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e10'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='700' fill='%23b3c5ff'%3EO%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#343537",
+            "tertiary-fixed-dim": "#c3c6d2",
+            "primary": "#b3c5ff",
+            "on-tertiary-fixed": "#181c24",
+            "inverse-on-surface": "#303033",
+            "surface-variant": "#343537",
+            "surface-container-lowest": "#0d0e10",
+            "outline-variant": "#424656",
+            "surface": "#121315",
+            "outline": "#8c90a1",
+            "surface-tint": "#b3c5ff",
+            "on-tertiary-fixed-variant": "#434750",
+            "on-primary": "#002b75",
+            "on-primary-fixed": "#001849",
+            "primary-fixed-dim": "#b3c5ff",
+            "secondary-fixed-dim": "#c4c7cc",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-container": "#f8f8ff",
+            "secondary": "#c4c7cc",
+            "on-surface-variant": "#c2c6d8",
+            "inverse-primary": "#0054d6",
+            "on-secondary-fixed-variant": "#43474b",
+            "on-primary-container": "#f8f7ff",
+            "on-surface": "#e3e2e5",
+            "inverse-surface": "#e3e2e5",
+            "secondary-fixed": "#e0e3e8",
+            "on-secondary-fixed": "#181c20",
+            "error-container": "#93000a",
+            "on-tertiary": "#2c3039",
+            "surface-bright": "#38393b",
+            "on-secondary-container": "#b5b9bd",
+            "tertiary-container": "#6e727c",
+            "secondary-container": "#46494e",
+            "tertiary": "#c3c6d2",
+            "surface-container": "#1f2022",
+            "error": "#ffb4ab",
+            "on-background": "#e3e2e5",
+            "background": "#121315",
+            "on-error": "#690005",
+            "surface-container-low": "#1b1c1e",
+            "surface-dim": "#121315",
+            "primary-fixed": "#dae1ff",
+            "on-secondary": "#2d3135",
+            "tertiary-fixed": "#dfe2ee",
+            "surface-container-high": "#292a2c",
+            "primary-container": "#0066ff",
+            "on-primary-fixed-variant": "#003fa4"
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          spacing: {
+            "space-sm": "0.5rem",
+            "space-xl": "3.5rem",
+            "space-xs": "0.25rem",
+            gutter: "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            margin: "4rem"
+          },
+          fontFamily: {
+            "body-lg": ["Manrope"],
+            "headline-sm": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-sm": ["Manrope"],
+            "label-caps": ["Space Grotesk"],
+            "display-xl": ["Syne"],
+            "label-mono": ["Space Grotesk"],
+            "headline-lg": ["Syne"],
+            "display-xl-mobile": ["Syne"],
+            "body-md": ["Manrope"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "display-xl": ["64px", { lineHeight: "68px", letterSpacing: "-0.025em", fontWeight: "700" }],
+            "label-mono": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "display-xl-mobile": ["40px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; -webkit-font-smoothing: antialiased; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    [hidden] { display: none !important; }
+    main { scroll-margin-top: 5rem; }
+
+    :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+      outline: 2px solid #b3c5ff;
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 100;
+      padding: 0.75rem 1.25rem;
+      background: #0066ff;
+      color: #f8f7ff;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <div class="h-16 max-w-7xl mx-auto px-gutter-mobile md:px-margin flex items-center justify-between gap-6">
+
+      <a href="index.html" title="Open index.html" aria-label="Obsidian Auto Studio — home" class="flex flex-col justify-center flex-shrink-0 group">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1 group-hover:text-primary transition-colors">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Primary">
+        <a href="index.html" title="Open index.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Home</a>
+        <a href="services.html" title="Open services.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Services</a>
+        <a href="packages.html" title="Open packages.html" aria-current="page" class="px-3 py-2 rounded-lg text-body-sm text-on-surface bg-surface-container-high font-medium">Packages</a>
+        <a href="transformations.html" title="Open transformations.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Transformations</a>
+        <a href="about.html" title="Open about.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">About</a>
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Enquire</a>
+      </nav>
+
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="hidden md:inline-flex items-center justify-center h-9 px-4 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+          Reserve Studio Bay
+        </a>
+        <button
+          type="button"
+          data-mobile-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          class="lg:hidden w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+        >
+          <span class="material-symbols-outlined text-[24px]" aria-hidden="true">menu</span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================= MOBILE NAV ============================= -->
+  <div data-mobile-nav-backdrop hidden class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm lg:hidden" aria-hidden="true"></div>
+
+  <div
+    id="mobile-nav-panel"
+    data-mobile-nav-panel
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="Site navigation"
+    class="fixed top-0 right-0 bottom-0 z-[61] w-full max-w-sm bg-surface-container-low border-l border-outline-variant/30 shadow-2xl flex flex-col lg:hidden"
+  >
+    <div class="h-16 px-gutter-mobile flex items-center justify-between border-b border-outline-variant/30 flex-shrink-0">
+      <div class="flex flex-col justify-center">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </div>
+      <button
+        type="button"
+        data-mobile-nav-close
+        class="w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+      >
+        <span class="material-symbols-outlined text-[24px]" aria-hidden="true">close</span>
+        <span class="sr-only">Close menu</span>
+      </button>
+    </div>
+
+    <nav class="flex-1 overflow-y-auto p-4 flex flex-col gap-1" aria-label="Primary mobile">
+      <a href="index.html" title="Open index.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Home</a>
+      <a href="services.html" title="Open services.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Services</a>
+      <a href="packages.html" title="Open packages.html" aria-current="page" class="px-4 py-3 rounded-lg text-on-surface bg-surface-container-high text-body-md font-medium">Packages</a>
+      <a href="transformations.html" title="Open transformations.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Transformations</a>
+      <a href="about.html" title="Open about.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">About</a>
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Enquire / Booking</a>
+    </nav>
+
+    <div class="p-4 border-t border-outline-variant/30 flex-shrink-0">
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+        Reserve Studio Bay
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================= MAIN ============================= -->
+  <main id="main" class="w-full pt-16 bg-surface min-h-[calc(100vh-20rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- ================= HEADER ================= -->
+      <section class="relative w-full border-b border-outline-variant/20" aria-labelledby="packages-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin pt-16 pb-12 md:pt-24 md:pb-16">
+          <div class="max-w-3xl">
+            <h1 id="packages-heading" class="font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight mb-6">
+              Tailored Commission Packages.
+            </h1>
+            <p class="font-body-lg text-body-lg text-secondary">
+              Transparent, tiered treatments structured around depth of correction and protective longevity. Every commission is staged in our climate-stabilized subterranean facility under 6,500K inspection lighting.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRICING CARDS ================= -->
+      <section class="w-full py-16 md:py-24" aria-label="Pricing Tiers">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Tier 1: Preservation -->
+            <div class="flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/20 p-8">
+              <div class="mb-6">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Preservation Commission</h2>
+                <p class="text-body-sm text-secondary">Essential protection for daily exotics.</p>
+              </div>
+              <div class="mb-8 pb-8 border-b border-outline-variant/20">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-4xl font-bold tracking-tight text-on-surface">£1,450</span>
+                  <span class="text-body-sm text-secondary">/ est.</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/20 text-body-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">schedule</span>
+                  2.5 Days
+                </div>
+              </div>
+              <ul class="flex flex-col gap-4 mb-8 flex-1">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Single-stage swirl elimination & optical refining</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">1-Year Hybrid Ceramic Fluoropolymer Sealant</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Interior deep extraction and matte cockpit de-greasing</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Engine bay dry-ice vapour cleansing & satin dressing</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Factory glass hydrophobicity barrier (exterior)</span>
+                </li>
+              </ul>
+              <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg border border-outline-variant/40 text-on-surface text-label-caps uppercase tracking-wide font-semibold hover:bg-surface-container-high transition-colors">
+                Enquire on Tier I
+              </a>
+            </div>
+
+            <!-- Tier 2: Signature (Highlighted) -->
+            <div class="flex flex-col rounded-xl bg-surface-container border border-primary/40 p-8 relative">
+              <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-on-primary text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                Most Popular
+              </div>
+              <div class="mb-6 mt-2">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Obsidian Signature</h2>
+                <p class="text-body-sm text-secondary">Our definitive standard for daily exotics.</p>
+              </div>
+              <div class="mb-8 pb-8 border-b border-outline-variant/20">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-4xl font-bold tracking-tight text-white">£2,850</span>
+                  <span class="text-body-sm text-secondary">/ est.</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-primary-container/20 border border-primary/30 text-body-sm text-primary">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">schedule</span>
+                  4.0 Days
+                </div>
+              </div>
+              <ul class="flex flex-col gap-4 mb-8 flex-1">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">Two-stage multi-depth paint correction & jewel finish</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">3-Year Dual-Layer Nanoceramic System (Base + Top)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">Wheels-off treatment: caliper & barrel ceramic barrier</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">Interior semi-aniline leather hydration & dye guard</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">Full hydrophobic glass coating (including panoramic roof)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-on-surface">Annual provenance inspection & gloss booster log</span>
+                </li>
+              </ul>
+              <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+                Reserve Signature Bay
+              </a>
+            </div>
+
+            <!-- Tier 3: Bespoke -->
+            <div class="flex flex-col rounded-xl bg-surface-container-low border border-outline-variant/20 p-8">
+              <div class="mb-6">
+                <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">The Atelier Bespoke</h2>
+                <p class="text-body-sm text-secondary">Museum-grade paint texture leveling.</p>
+              </div>
+              <div class="mb-8 pb-8 border-b border-outline-variant/20">
+                <div class="flex items-baseline gap-2 mb-2">
+                  <span class="text-4xl font-bold tracking-tight text-on-surface">£4,950</span>
+                  <span class="text-body-sm text-secondary">/ est.</span>
+                </div>
+                <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/20 text-body-sm text-on-surface-variant">
+                  <span class="material-symbols-outlined text-[14px]" aria-hidden="true">schedule</span>
+                  7+ Days
+                </div>
+              </div>
+              <ul class="flex flex-col gap-4 mb-8 flex-1">
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Master-detailer clear coat leveling & 3000-5000 grit wet sanding</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Self-healing elastomeric ceramic matrix (5+ Year Durability)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Short-wave infrared lamp curing sequence per individual panel</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Exhaust tips, suspension components & arches steam-sealed</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Complete cabin dis-assembly for deep alcantara & seam sanitization</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5" aria-hidden="true">check_circle</span>
+                  <span class="text-body-sm text-secondary">Custom engraved aluminium flight-case aftercare maintenance vault</span>
+                </li>
+              </ul>
+              <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg border border-outline-variant/40 text-on-surface text-label-caps uppercase tracking-wide font-semibold hover:bg-surface-container-high transition-colors">
+                Enquire on Bespoke
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPARISON MATRIX ================= -->
+      <section class="w-full bg-surface-container-lowest border-t border-b border-outline-variant/20" aria-labelledby="matrix-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24">
+          <div class="mb-12">
+            <h2 id="matrix-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">Precision Matrix</h2>
+            <p class="font-body-md text-body-md text-secondary max-w-2xl">
+              A side-by-side technical breakdown of procedures, materials, cure methodologies, and documentation standards across all tiers.
+            </p>
+          </div>
+
+          <div class="w-full overflow-x-auto rounded-xl border border-outline-variant/20 bg-surface-container">
+            <table class="w-full min-w-[800px] text-left border-collapse">
+              <thead>
+                <tr class="border-b border-outline-variant/20 bg-surface-container-high/50">
+                  <th scope="col" class="p-5 pl-6 text-body-sm font-semibold text-on-surface w-1/4">Engineering Dimension</th>
+                  <th scope="col" class="p-5 text-body-sm font-semibold text-secondary w-1/4">Tier I: Preservation</th>
+                  <th scope="col" class="p-5 text-body-sm font-semibold text-primary w-1/4 bg-primary-container/5">Tier II: Obsidian Signature</th>
+                  <th scope="col" class="p-5 pr-6 text-body-sm font-semibold text-secondary w-1/4">Tier III: Atelier Bespoke</th>
+                </tr>
+              </thead>
+              <tbody class="text-body-sm">
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Paint Correction Depth</th>
+                  <td class="p-5 text-secondary">Single-Stage (60-70% Swirl Eradication)</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Two-Stage Compound & Polish (90-95%)</td>
+                  <td class="p-5 pr-6 text-secondary">Multi-Stage + Wet Sanding Leveling (99%)</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Protective Chemistry</th>
+                  <td class="p-5 text-secondary">Hybrid Ceramic Sealant (12 Months)</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Dual-Layer 9H Quartz Nanotechnology</td>
+                  <td class="p-5 pr-6 text-secondary">Self-Healing Elastomeric Matrix</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Wheel & Brake Treatment</th>
+                  <td class="p-5 text-secondary">Wheels-On Deep De-iron & Sealant Face</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Wheels-Off 360° Barrel, Caliper & Arch Coat</td>
+                  <td class="p-5 pr-6 text-secondary">Wheels-Off Ultrasonics + Ceramic Hub Armor</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Curing Methodology</th>
+                  <td class="p-5 text-secondary">Ambient Humidity Curing (18 Hours)</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Targeted Short-Wave Infrared Bake</td>
+                  <td class="p-5 pr-6 text-secondary">Full-spectrum IR Lamp Multi-Cycle Cure</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Interior Treatment</th>
+                  <td class="p-5 text-secondary">Vacuum, Cockpit Cleanse, Conditioner</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Full Leather Desalting & Hydrophobic Shield</td>
+                  <td class="p-5 pr-6 text-secondary">Seats Dismounted, Sub-carpet Steam, Ozone & Feed</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Micron Depth Report</th>
+                  <td class="p-5 text-secondary">Pre & Post Summary Matrix</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">32-Point Ultrasound Depth Map</td>
+                  <td class="p-5 pr-6 text-secondary">64-Point High-Res Provenance Ledger</td>
+                </tr>
+                <tr class="border-b border-outline-variant/10 hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Post-Delivery Care Kit</th>
+                  <td class="p-5 text-secondary">Standard pH Neutral Maintenance Bottle</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-medium">Obsidian Ceramic Maintenance Bag (3 items)</td>
+                  <td class="p-5 pr-6 text-secondary">Custom Engraved Metal Case (7 Products + Towels)</td>
+                </tr>
+                <tr class="hover:bg-surface-container-high/30 transition-colors">
+                  <th scope="row" class="p-5 pl-6 font-medium text-on-surface">Typical Turnaround</th>
+                  <td class="p-5 text-secondary">48 Hours</td>
+                  <td class="p-5 text-primary bg-primary-container/5 font-bold">96 Hours (4 Days)</td>
+                  <td class="p-5 pr-6 text-secondary">7 to 10 Working Days</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ADD-ONS ================= -->
+      <section class="w-full py-20 md:py-24" aria-labelledby="addons-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="flex flex-col p-8 rounded-xl bg-surface-container-low border border-outline-variant/20">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">tune</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Bespoke Add-Ons</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                Customise your commission with optical PPF front-end wrap, windscreen film, dry-ice chassis cleaning, or dedicated convertible roof impermeability.
+              </p>
+              <span class="text-body-sm text-outline">Available upon physical intake</span>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-xl bg-surface-container-low border border-outline-variant/20">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">lock</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Discretion Protocol</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                All commissions benefit from strict NDA agreements, anonymised documentation, covered transporter intake, and unbranded secure subterranean storage.
+              </p>
+              <span class="text-body-sm text-outline">Museum & Private Collection Grade</span>
+            </div>
+
+            <div class="flex flex-col p-8 rounded-xl bg-surface-container-low border border-outline-variant/20">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-6" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">local_shipping</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Bay Logistics</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                Complimentary covered enclosed vehicle transit provided within Greater London and Geneva cantons for Tier II and Tier III commissions.
+              </p>
+              <span class="text-body-sm text-outline">White-Glove Transport</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DISCLAIMER ================= -->
+      <section class="w-full pb-20 md:pb-24" aria-labelledby="disclaimer-heading">
+        <div class="max-w-4xl mx-auto px-gutter-mobile md:px-margin">
+          <div class="p-8 md:p-12 rounded-xl bg-surface-container-lowest border border-outline-variant/20 text-center flex flex-col items-center">
+            <span class="material-symbols-outlined text-outline text-[24px] mb-4" aria-hidden="true">info</span>
+            <h2 id="disclaimer-heading" class="font-headline-sm text-headline-sm text-on-surface mb-3">Pricing Transparency & Consultation Disclaimer</h2>
+            <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-8">
+              All pricing is illustrative and tailored to vehicle geometry, paint hardness, and initial surface condition upon in-person studio inspection. Exotic clear coats (e.g. vintage nitrocellulose lacquer, matte paint finishes, or ceramic-infused factory clears) require specialised handling and will be formally quoted post-microscopic analysis.
+            </p>
+            <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center justify-center h-11 px-6 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+              Arrange Diagnostic Evaluation
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="w-full bg-[#090A0C] border-t border-[#23262F] pt-space-xl pb-space-lg text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-lg border-b border-outline-variant/30">
+
+        <div class="lg:col-span-5 flex flex-col gap-space-sm">
+          <div class="flex flex-col justify-center">
+            <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+            <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary max-w-md mt-2">
+            Bespoke preservation, multi-stage mirror clear coat correction, and advanced surface protection engineered for museum-grade and rare kinetic art.
+          </p>
+          <div class="mt-space-sm flex items-center gap-2">
+            <span class="text-body-sm text-outline">Portfolio curation:</span>
+            <span class="text-body-sm text-primary">Falalu Creative Studio</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Atelier Locations</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Bay 04, Apex Atelier Boulevard</p>
+          <p class="font-body-sm text-body-sm text-secondary">London W1K • Geneva 1204</p>
+          <p class="font-body-sm text-body-sm text-secondary mt-3">+44 (0) 20 7946 0882</p>
+          <p class="font-body-sm text-body-sm text-secondary">concierge@obsidianautostudio.ch</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Studio Hours</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Mon – Fri: 08:00 – 19:00 GMT</p>
+          <p class="font-body-sm text-body-sm text-secondary">Saturday: Inspections only</p>
+          <p class="font-body-sm text-body-sm text-secondary">Sunday: Storage transit</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Standards</span>
+          <nav class="flex flex-col gap-1.5" aria-label="Standards and craft">
+            <a href="standards.html#craftsmanship" title="Open standards.html#craftsmanship" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Craftsmanship Charter</a>
+            <a href="standards.html#preservation" title="Open standards.html#preservation" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Preservation Protocol</a>
+            <a href="standards.html#privacy" title="Open standards.html#privacy" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Privacy &amp; Discretion</a>
+            <a href="standards.html#legal" title="Open standards.html#legal" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Legal &amp; Provenance</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="pt-space-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+        <p class="font-body-sm text-body-sm text-secondary max-w-4xl text-left">
+          Obsidian Auto Studio is a fictional brand concept created by Falalu Creative Studio. All performance figures, pricing, names, and reviews shown are illustrative for demonstration purposes and are not guarantees of durability or specific paint outcomes.
+        </p>
+        <span class="text-body-sm text-outline flex-shrink-0">© 2025 Falalu Creative Studio. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= SCRIPTS ============================= -->
+  <script>
+    (function init() {
+      /* ----------------------------- Mobile Nav ----------------------------- */
+      const navToggle = document.querySelector('[data-mobile-nav-toggle]');
+      const navPanel = document.querySelector('[data-mobile-nav-panel]');
+      const navBackdrop = document.querySelector('[data-mobile-nav-backdrop]');
+      const navClose = document.querySelector('[data-mobile-nav-close]');
+
+      if (navToggle && navPanel && navBackdrop) {
+        const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+        let lastFocused = null;
+        let previouslyOverflow = '';
+
+        function openNav() {
+          lastFocused = document.activeElement;
+          navPanel.hidden = false;
+          navBackdrop.hidden = false;
+          navToggle.setAttribute('aria-expanded', 'true');
+          previouslyOverflow = document.body.style.overflow;
+          document.body.style.overflow = 'hidden';
+          const first = navPanel.querySelector(FOCUSABLE);
+          if (first) first.focus();
+        }
+
+        function closeNav() {
+          navPanel.hidden = true;
+          navBackdrop.hidden = true;
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = previouslyOverflow;
+          if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+        }
+
+        navToggle.addEventListener('click', function () {
+          if (navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+          else openNav();
+        });
+
+        if (navClose) navClose.addEventListener('click', closeNav);
+        navBackdrop.addEventListener('click', closeNav);
+
+        navPanel.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { e.preventDefault(); closeNav(); return; }
+          if (e.key !== 'Tab') return;
+          const focusables = Array.from(navPanel.querySelectorAll(FOCUSABLE)).filter(
+            function (el) { return el.offsetParent !== null; }
+          );
+          if (focusables.length === 0) return;
+          const first = focusables[0];
+          const last = focusables[focusables.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        });
+
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024 && navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+        });
+      }
+    })();
+  </script>
+</body>
+                    </html>
