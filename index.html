@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#121315" />
+
+  <title>Obsidian Auto Studio — Bespoke Automotive Preservation Atelier</title>
+  <meta name="description" content="Obsidian Auto Studio — a Falalu Creative Studio portfolio concept. Bespoke paint correction, nanoceramic protection, and preservation for museum-grade and rare kinetic art." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Obsidian Auto Studio — Bespoke Automotive Preservation Atelier" />
+  <meta property="og:description" content="A portfolio concept by Falalu Creative Studio. Multistage mirror correction, curated ceramic matrices, white-glove transport." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600&auto=format&fit=crop" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Obsidian Auto Studio — Bespoke Automotive Preservation Atelier" />
+  <meta name="twitter:description" content="A portfolio concept by Falalu Creative Studio." />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600&auto=format&fit=crop" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e10'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='700' fill='%23b3c5ff'%3EO%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#343537",
+            "tertiary-fixed-dim": "#c3c6d2",
+            "primary": "#b3c5ff",
+            "on-tertiary-fixed": "#181c24",
+            "inverse-on-surface": "#303033",
+            "surface-variant": "#343537",
+            "surface-container-lowest": "#0d0e10",
+            "outline-variant": "#424656",
+            "surface": "#121315",
+            "outline": "#8c90a1",
+            "surface-tint": "#b3c5ff",
+            "on-tertiary-fixed-variant": "#434750",
+            "on-primary": "#002b75",
+            "on-primary-fixed": "#001849",
+            "primary-fixed-dim": "#b3c5ff",
+            "secondary-fixed-dim": "#c4c7cc",
+            "on-error-container": "#ffdad6",
+            "on-tertiary-container": "#f8f8ff",
+            "secondary": "#c4c7cc",
+            "on-surface-variant": "#c2c6d8",
+            "inverse-primary": "#0054d6",
+            "on-secondary-fixed-variant": "#43474b",
+            "on-primary-container": "#f8f7ff",
+            "on-surface": "#e3e2e5",
+            "inverse-surface": "#e3e2e5",
+            "secondary-fixed": "#e0e3e8",
+            "on-secondary-fixed": "#181c20",
+            "error-container": "#93000a",
+            "on-tertiary": "#2c3039",
+            "surface-bright": "#38393b",
+            "on-secondary-container": "#b5b9bd",
+            "tertiary-container": "#6e727c",
+            "secondary-container": "#46494e",
+            "tertiary": "#c3c6d2",
+            "surface-container": "#1f2022",
+            "error": "#ffb4ab",
+            "on-background": "#e3e2e5",
+            "background": "#121315",
+            "on-error": "#690005",
+            "surface-container-low": "#1b1c1e",
+            "surface-dim": "#121315",
+            "primary-fixed": "#dae1ff",
+            "on-secondary": "#2d3135",
+            "tertiary-fixed": "#dfe2ee",
+            "surface-container-high": "#292a2c",
+            "primary-container": "#0066ff",
+            "on-primary-fixed-variant": "#003fa4"
+          },
+          borderRadius: { DEFAULT: "0.125rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          spacing: {
+            "space-sm": "0.5rem",
+            "space-xl": "3.5rem",
+            "space-xs": "0.25rem",
+            gutter: "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-lg": "2rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            margin: "4rem"
+          },
+          fontFamily: {
+            "body-lg": ["Manrope"],
+            "headline-sm": ["Syne"],
+            "headline-lg-mobile": ["Syne"],
+            "headline-md": ["Syne"],
+            "body-sm": ["Manrope"],
+            "label-caps": ["Space Grotesk"],
+            "display-xl": ["Syne"],
+            "label-mono": ["Space Grotesk"],
+            "headline-lg": ["Syne"],
+            "display-xl-mobile": ["Syne"],
+            "body-md": ["Manrope"]
+          },
+          fontSize: {
+            "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }],
+            "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "600" }],
+            "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }],
+            "display-xl": ["64px", { lineHeight: "68px", letterSpacing: "-0.025em", fontWeight: "700" }],
+            "label-mono": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "500" }],
+            "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "display-xl-mobile": ["40px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+            "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; -webkit-font-smoothing: antialiased; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    [hidden] { display: none !important; }
+    main { scroll-margin-top: 5rem; }
+
+    :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+      outline: 2px solid #b3c5ff;
+      outline-offset: 2px;
+      border-radius: 6px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      z-index: 100;
+      padding: 0.75rem 1.25rem;
+      background: #0066ff;
+      color: #f8f7ff;
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .animate-ping, .animate-pulse { animation: none !important; }
+      *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    [data-ba] { touch-action: pan-y; cursor: ew-resize; }
+    [data-ba-handle][data-dragging="true"] { cursor: grabbing; }
+
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      line-height: 1;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container min-h-screen">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============================= HEADER ============================= -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <div class="h-16 max-w-7xl mx-auto px-gutter-mobile md:px-margin flex items-center justify-between gap-6">
+
+      <!-- Brand / Logo Lockup (Text Only) -->
+      <a href="index.html" title="Open index.html" aria-label="Obsidian Auto Studio — home" class="flex flex-col justify-center flex-shrink-0 group">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1 group-hover:text-primary transition-colors">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Primary">
+        <a href="index.html" title="Open index.html" aria-current="page" class="px-3 py-2 rounded-lg text-body-sm text-on-surface bg-surface-container-high font-medium">Home</a>
+        <a href="services.html" title="Open services.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Services</a>
+        <a href="packages.html" title="Open packages.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Packages</a>
+        <a href="transformations.html" title="Open transformations.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Transformations</a>
+        <a href="about.html" title="Open about.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">About</a>
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-3 py-2 rounded-lg text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors">Enquire</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-3 flex-shrink-0">
+        <a href="enquire-booking.html" title="Open enquire-booking.html" class="hidden md:inline-flex items-center justify-center h-9 px-4 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+          Reserve Studio Bay
+        </a>
+        <!-- Mobile Menu Trigger -->
+        <button
+          type="button"
+          data-mobile-nav-toggle
+          aria-expanded="false"
+          aria-controls="mobile-nav-panel"
+          class="lg:hidden w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+        >
+          <span class="material-symbols-outlined text-[24px]" aria-hidden="true">menu</span>
+          <span class="sr-only">Open navigation menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================= MOBILE NAV ============================= -->
+  <div data-mobile-nav-backdrop hidden class="fixed inset-0 z-[60] bg-black/60 backdrop-blur-sm lg:hidden" aria-hidden="true"></div>
+
+  <div
+    id="mobile-nav-panel"
+    data-mobile-nav-panel
+    hidden
+    role="dialog"
+    aria-modal="true"
+    aria-label="Site navigation"
+    class="fixed top-0 right-0 bottom-0 z-[61] w-full max-w-sm bg-surface-container-low border-l border-outline-variant/30 shadow-2xl flex flex-col lg:hidden"
+  >
+    <div class="h-16 px-gutter-mobile flex items-center justify-between border-b border-outline-variant/30 flex-shrink-0">
+      <div class="flex flex-col justify-center">
+        <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+        <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+      </div>
+      <button
+        type="button"
+        data-mobile-nav-close
+        class="w-10 h-10 -mr-2 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors"
+      >
+        <span class="material-symbols-outlined text-[24px]" aria-hidden="true">close</span>
+        <span class="sr-only">Close menu</span>
+      </button>
+    </div>
+
+    <nav class="flex-1 overflow-y-auto p-4 flex flex-col gap-1" aria-label="Primary mobile">
+      <a href="index.html" title="Open index.html" aria-current="page" class="px-4 py-3 rounded-lg text-on-surface bg-surface-container-high text-body-md font-medium">Home</a>
+      <a href="services.html" title="Open services.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Services</a>
+      <a href="packages.html" title="Open packages.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Packages</a>
+      <a href="transformations.html" title="Open transformations.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Transformations</a>
+      <a href="about.html" title="Open about.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">About</a>
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="px-4 py-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/60 transition-colors text-body-md">Enquire / Booking</a>
+    </nav>
+
+    <div class="p-4 border-t border-outline-variant/30 flex-shrink-0">
+      <a href="enquire-booking.html" title="Open enquire-booking.html" class="flex items-center justify-center h-11 w-full rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+        Reserve Studio Bay
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================= MAIN ============================= -->
+  <main id="main" class="w-full pt-16 bg-surface min-h-[calc(100vh-20rem)]">
+    <div class="flex flex-col w-full">
+
+      <!-- ================= HERO ================= -->
+      <section class="relative w-full overflow-hidden border-b border-outline-variant/20" aria-labelledby="hero-heading">
+        <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[300px] bg-primary/5 blur-[120px] pointer-events-none rounded-full" aria-hidden="true"></div>
+
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin pt-16 pb-20 md:pt-24 md:pb-28 relative">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+            <!-- Hero editorial -->
+            <div class="lg:col-span-5 flex flex-col">
+              <h1 id="hero-heading" class="font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight mb-6">
+                Precision Care.<br />
+                <span class="text-secondary">Exceptional Finish.</span>
+              </h1>
+
+              <p class="font-body-lg text-body-lg text-secondary max-w-xl mb-10">
+                The pinnacle of bespoke paint correction, advanced nanoceramic protection, and interior preservation for discerning automotive collectors and museum-grade kinetic art.
+              </p>
+
+              <div class="flex flex-wrap items-center gap-3">
+                <a href="packages.html" title="Open packages.html" class="group inline-flex items-center gap-2 h-11 px-6 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+                  Explore Packages
+                  <span class="material-symbols-outlined text-[18px] group-hover:translate-x-0.5 transition-transform" aria-hidden="true">east</span>
+                </a>
+                <a href="transformations.html" title="Open transformations.html" class="inline-flex items-center gap-2 h-11 px-6 rounded-lg border border-outline-variant/40 text-on-surface text-label-caps uppercase tracking-wide font-semibold hover:bg-surface-container-high transition-colors">
+                  View Transformations
+                </a>
+              </div>
+
+              <dl class="flex flex-wrap items-center gap-x-10 gap-y-5 mt-12 pt-8 border-t border-outline-variant/20">
+                <div>
+                  <dd class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface">48<span class="text-primary">+</span></dd>
+                  <dt class="text-body-sm text-secondary mt-1">Hours per commission</dt>
+                </div>
+                <div>
+                  <dd class="text-3xl md:text-4xl font-bold tracking-tight text-primary">99.4<span class="text-[20px]">%</span></dd>
+                  <dt class="text-body-sm text-secondary mt-1">Defect removal rate</dt>
+                </div>
+                <div>
+                  <dd class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface">ISO-5</dd>
+                  <dt class="text-body-sm text-secondary mt-1">Class-100 clean bay</dt>
+                </div>
+              </dl>
+            </div>
+
+            <!-- Hero image -->
+            <div class="lg:col-span-7">
+              <div class="relative w-full rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/20">
+                <div class="relative aspect-[16/10] w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600&auto=format&fit=crop"
+                    alt="Hypercar under 5500K linear studio lighting in Obsidian's subterranean detailing bay."
+                    class="w-full h-full object-cover object-center"
+                    width="1280" height="800"
+                    loading="eager" fetchpriority="high" decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BEFORE / AFTER COMPARATOR ================= -->
+      <section class="w-full bg-surface-container-lowest border-b border-outline-variant/20" aria-labelledby="compare-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+            <!-- Narrative -->
+            <div class="lg:col-span-4 flex flex-col">
+              <h2 id="compare-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+                Multi-Stage Clear Coat Rectification
+              </h2>
+              <p class="font-body-md text-body-md text-secondary mb-6">
+                Microscopic swirl marks, micro-marring, and oxidation absorb incident photon rays, dulling depth. Our non-destructive correction process levels the substrate with nanometer-precise compound stages.
+              </p>
+
+              <div class="flex items-center gap-3 text-body-sm text-secondary pt-4 border-t border-outline-variant/20">
+                <span class="text-on-surface font-medium">98.6 GU</span>
+                <span class="text-outline">·</span>
+                <span>Baseline 64.2 GU</span>
+              </div>
+            </div>
+
+            <!-- Comparator -->
+            <div class="lg:col-span-8">
+              <div
+                data-ba
+                class="relative w-full aspect-[16/10] md:aspect-[21/9] rounded-xl overflow-hidden bg-surface-container-low border border-outline-variant/30 select-none"
+              >
+                <!-- After (Clean, Glossy Image) -->
+                <img
+                  src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600&auto=format&fit=crop"
+                  alt="Clean automotive clear coat under specular lighting."
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                  width="1200" height="514" loading="lazy" decoding="async"
+                />
+
+                <!-- Before (Same image, but heavily filtered + noise overlay to simulate swirls) -->
+                <div data-ba-clip class="absolute inset-0" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);">
+                  <img
+                    src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=1600&auto=format&fit=crop"
+                    alt="" aria-hidden="true"
+                    class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    width="1200" height="514" loading="lazy" decoding="async"
+                    style="filter: grayscale(100%) brightness(0.5) contrast(1.8);"
+                  />
+                  <!-- SVG Noise Overlay to simulate clear coat swirls/holograms -->
+                  <div class="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'noise\'><feTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'3\' stitchTiles=\'stitch\'/></filter><rect width=\'100%\' height=\'100%\' filter=\'url(%23noise)\' opacity=\'0.6\'/></svg>');"></div>
+                </div>
+
+                <!-- Handle -->
+                <div data-ba-handle class="absolute inset-y-0 z-20 pointer-events-none" style="left: 50%; transform: translateX(-50%);">
+                  <div class="w-px h-full bg-primary-fixed mx-auto" aria-hidden="true"></div>
+                  <div
+                    role="slider"
+                    tabindex="0"
+                    aria-label="Drag or use arrow keys to compare before and after"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"
+                    aria-valuetext="Divider at 50 percent"
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-surface-container-highest border border-outline-variant/50 shadow-lg flex items-center justify-center text-on-surface pointer-events-auto cursor-ew-resize hover:bg-surface-bright transition-colors"
+                  >
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_left</span>
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">chevron_right</span>
+                  </div>
+                </div>
+              </div>
+
+              <p class="font-body-sm text-body-sm text-outline mt-3 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-[14px]" aria-hidden="true">drag_indicator</span>
+                Drag or use ← → keys to compare
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CORE PILLARS ================= -->
+      <section class="w-full bg-surface border-b border-outline-variant/20" aria-labelledby="pillars-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <h2 id="pillars-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface max-w-2xl">
+              The Standard of Non-Destructive Perfection.
+            </h2>
+            <p class="font-body-md text-body-md text-secondary max-w-sm md:text-right">
+              Every surface is mapped, measured, and treated as an unrepeatable work of engineering. Zero shortcuts, zero fillers, zero compromise.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <article class="group flex flex-col p-8 rounded-lg bg-surface-container-low border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">layers</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Scientific Surface Rectification</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-8 flex-1">
+                Ultrasonic digital thickness profiling maps basecoat and clear lacquer across 120 key inspection points. Multi-stage machine jeweling eliminates orange peel and RIDS without compromising substrate integrity.
+              </p>
+              <div class="pt-5 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Laser Micron Gauging</span>
+                <span class="text-body-sm text-primary font-medium">±0.2μm Precision</span>
+              </div>
+            </article>
+
+            <article class="group flex flex-col p-8 rounded-lg bg-surface-container-low border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">shield_with_heart</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Curated Protective Formulations</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-8 flex-1">
+                Proprietary quartz polysilazane matrices and high-solid elastomeric self-healing films. Shielding against chemical etchings, track debris, UV solar degradation, and acidic environmental fallout.
+              </p>
+              <div class="pt-5 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Hydrophobic Sheeting</span>
+                <span class="text-body-sm text-primary font-medium">118° Contact Angle</span>
+              </div>
+            </article>
+
+            <article class="group flex flex-col p-8 rounded-lg bg-surface-container-low border border-outline-variant/20 hover:border-outline-variant/40 transition-colors">
+              <div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors" aria-hidden="true">
+                <span class="material-symbols-outlined text-[20px]">local_shipping</span>
+              </div>
+              <h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Concierge Vehicle Transport</h3>
+              <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-8 flex-1">
+                Climate-regulated, fully enclosed transporters featuring hydraulic low-angle race decks. Tailored end-to-end security logistics spanning European and international collection hubs.
+              </p>
+              <div class="pt-5 border-t border-outline-variant/20 flex items-center justify-between">
+                <span class="text-body-sm text-secondary">Transit Security</span>
+                <span class="text-body-sm text-primary font-medium">GPS Telemetry Locked</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FEATURED SERVICES ================= -->
+      <section class="w-full bg-surface-container-lowest border-b border-outline-variant/20" aria-labelledby="featured-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <h2 id="featured-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+              Featured Studio Treatments
+            </h2>
+            <a href="services.html" title="Open services.html" class="inline-flex items-center gap-2 text-body-sm text-primary hover:text-on-surface transition-colors font-medium">
+              Browse Complete Menu
+              <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <article class="group flex flex-col rounded-lg bg-surface-container-low border border-outline-variant/20 overflow-hidden hover:border-outline-variant/40 transition-colors">
+              <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-highest">
+                <img
+                  src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800&auto=format&fit=crop"
+                  alt="Technician performing precision machine polishing on a dark automotive quarter panel."
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  width="800" height="500" loading="lazy" decoding="async"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-1">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Concours Paint Correction</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                  Meticulous multi-stage machine refinement addressing factory orange peel, sanding tracers, and micro-scratches to achieve museum reflection depth.
+                </p>
+                <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                  <span class="text-body-sm text-secondary">35–50 hrs</span>
+                  <a href="services.html#discipline-01" title="Open services.html#discipline-01" class="inline-flex items-center gap-1 text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium">
+                    From £1,850
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="group flex flex-col rounded-lg bg-surface-container-low border border-outline-variant/20 overflow-hidden hover:border-outline-variant/40 transition-colors">
+              <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-highest">
+                <img
+                  src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=800&auto=format&fit=crop"
+                  alt="Water beading on a ceramic-coated carbon fiber hood."
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  width="800" height="500" loading="lazy" decoding="async"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-1">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Nanoceramic Matrix Application</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                  Permanent ceramic and graphene crystalline bonding resisting chemical ingress, extreme thermal fluctuations, oxidation, and bird strikes.
+                </p>
+                <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                  <span class="text-body-sm text-secondary">Up to 7 yrs warranty</span>
+                  <a href="services.html#discipline-02" title="Open services.html#discipline-02" class="inline-flex items-center gap-1 text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium">
+                    From £2,400
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="group flex flex-col rounded-lg bg-surface-container-low border border-outline-variant/20 overflow-hidden hover:border-outline-variant/40 transition-colors">
+              <div class="relative w-full aspect-[16/10] overflow-hidden bg-surface-container-highest">
+                <img
+                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=800&auto=format&fit=crop"
+                  alt="Bespoke supercar interior with aniline leather and Alcantara."
+                  class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  width="800" height="500" loading="lazy" decoding="async"
+                />
+              </div>
+              <div class="p-6 flex flex-col flex-1">
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Bespoke Interior Preservation</h3>
+                <p class="font-body-sm text-body-sm text-secondary leading-relaxed mb-6 flex-1">
+                  Deep restorative treatment of fine aniline hides, matte carbon fiber components, delicate switchgear, and steam sterilization of cabin airflow ducts.
+                </p>
+                <div class="pt-4 border-t border-outline-variant/20 flex items-center justify-between">
+                  <span class="text-body-sm text-secondary">pH-neutral care</span>
+                  <a href="services.html#discipline-03" title="Open services.html#discipline-03" class="inline-flex items-center gap-1 text-body-sm text-on-surface group-hover:text-primary transition-colors font-medium">
+                    From £1,200
+                    <span class="material-symbols-outlined text-[16px]" aria-hidden="true">arrow_outward</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= QUOTE ================= -->
+      <section class="w-full bg-surface border-b border-outline-variant/20" aria-labelledby="quote-heading">
+        <div class="max-w-4xl mx-auto px-gutter-mobile md:px-margin py-20 md:py-24 flex flex-col items-center text-center">
+          <blockquote id="quote-heading" class="font-headline-md text-headline-md md:font-headline-lg md:text-headline-lg text-on-surface font-semibold tracking-tight leading-snug mb-8 text-balance">
+            “We do not treat automobiles merely as modes of conveyance. We view them as dynamic sculpture: irreplaceable expressions of aerodynamics and lacquer, worthy of conservation standards equal to fine art.”
+          </blockquote>
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-body-md text-on-surface font-medium">Kareem Falalu</span>
+            <span class="text-body-sm text-secondary">Director of Preservation • Obsidian Atelier</span>
+            <span class="text-[11px] text-outline uppercase tracking-widest mt-3">Illustrative attribution for demo purposes</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BOOKING BANNER ================= -->
+      <section class="w-full bg-surface-container-low" aria-labelledby="booking-heading">
+        <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin py-16 md:py-20">
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8 p-8 md:p-12 rounded-xl bg-surface-container border border-outline-variant/20">
+            <div class="max-w-2xl">
+              <h2 id="booking-heading" class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">Secure Your Studio Allocation</h2>
+              <p class="font-body-md text-body-md text-secondary">
+                Due to exhaustive hours dedicated to single-chassis commissions, Obsidian operates strictly on a private scheduling ledger. Now reserving bay schedules for Q2 and Q3.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 flex-shrink-0">
+              <a href="enquire-booking.html" title="Open enquire-booking.html" class="inline-flex items-center justify-center h-11 px-6 rounded-lg bg-primary-container text-on-primary-container text-label-caps uppercase tracking-wide font-semibold hover:bg-[#0052cc] transition-colors">
+                Commence Consultation
+              </a>
+              <a href="about.html" title="Open about.html" class="inline-flex items-center justify-center h-11 px-6 rounded-lg border border-outline-variant/40 text-on-surface text-label-caps uppercase tracking-wide font-semibold hover:bg-surface-container-high transition-colors">
+                Studio Provenance
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="w-full bg-[#090A0C] border-t border-[#23262F] pt-space-xl pb-space-lg text-on-surface-variant">
+    <div class="max-w-7xl mx-auto px-gutter-mobile md:px-margin">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-lg border-b border-outline-variant/30">
+
+        <div class="lg:col-span-5 flex flex-col gap-space-sm">
+          <div class="flex flex-col justify-center">
+            <span class="font-headline-sm text-[15px] font-bold uppercase tracking-[0.18em] text-on-surface leading-none mb-1">Obsidian</span>
+            <span class="font-label-caps text-[9px] text-secondary uppercase tracking-[0.28em] leading-none">Auto Studio</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-secondary max-w-md mt-2">
+            Bespoke preservation, multi-stage mirror clear coat correction, and advanced surface protection engineered for museum-grade and rare kinetic art.
+          </p>
+          <div class="mt-space-sm flex items-center gap-2">
+            <span class="text-body-sm text-outline">Portfolio curation:</span>
+            <span class="text-body-sm text-primary">Falalu Creative Studio</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Atelier Locations</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Bay 04, Apex Atelier Boulevard</p>
+          <p class="font-body-sm text-body-sm text-secondary">London W1K • Geneva 1204</p>
+          <p class="font-body-sm text-body-sm text-secondary mt-3">+44 (0) 20 7946 0882</p>
+          <p class="font-body-sm text-body-sm text-secondary">concierge@obsidianautostudio.ch</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Studio Hours</span>
+          <p class="font-body-sm text-body-sm text-on-surface">Mon – Fri: 08:00 – 19:00 GMT</p>
+          <p class="font-body-sm text-body-sm text-secondary">Saturday: Inspections only</p>
+          <p class="font-body-sm text-body-sm text-secondary">Sunday: Storage transit</p>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-1">
+          <span class="text-body-sm text-on-surface font-semibold mb-1">Standards</span>
+          <nav class="flex flex-col gap-1.5" aria-label="Standards and craft">
+            <a href="standards.html#craftsmanship" title="Open standards.html#craftsmanship" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Craftsmanship Charter</a>
+            <a href="standards.html#preservation" title="Open standards.html#preservation" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Preservation Protocol</a>
+            <a href="standards.html#privacy" title="Open standards.html#privacy" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Privacy &amp; Discretion</a>
+            <a href="standards.html#legal" title="Open standards.html#legal" class="font-body-sm text-body-sm text-secondary hover:text-on-surface transition-colors">Legal &amp; Provenance</a>
+          </nav>
+        </div>
+      </div>
+
+      <div class="pt-space-md flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+        <p class="font-body-sm text-body-sm text-secondary max-w-4xl text-left">
+          Obsidian Auto Studio is a fictional brand concept created by Falalu Creative Studio. All performance figures, pricing, names, and reviews shown are illustrative for demonstration purposes and are not guarantees of durability or specific paint outcomes.
+        </p>
+        <span class="text-body-sm text-outline flex-shrink-0">© 2025 Falalu Creative Studio. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================= SCRIPTS ============================= -->
+  <script>
+    (function init() {
+      /* ----------------------------- Mobile Nav ----------------------------- */
+      const navToggle = document.querySelector('[data-mobile-nav-toggle]');
+      const navPanel = document.querySelector('[data-mobile-nav-panel]');
+      const navBackdrop = document.querySelector('[data-mobile-nav-backdrop]');
+      const navClose = document.querySelector('[data-mobile-nav-close]');
+
+      if (navToggle && navPanel && navBackdrop) {
+        const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
+        let lastFocused = null;
+        let previouslyOverflow = '';
+
+        function openNav() {
+          lastFocused = document.activeElement;
+          navPanel.hidden = false;
+          navBackdrop.hidden = false;
+          navToggle.setAttribute('aria-expanded', 'true');
+          previouslyOverflow = document.body.style.overflow;
+          document.body.style.overflow = 'hidden';
+          const first = navPanel.querySelector(FOCUSABLE);
+          if (first) first.focus();
+        }
+
+        function closeNav() {
+          navPanel.hidden = true;
+          navBackdrop.hidden = true;
+          navToggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = previouslyOverflow;
+          if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+        }
+
+        navToggle.addEventListener('click', function () {
+          if (navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+          else openNav();
+        });
+
+        if (navClose) navClose.addEventListener('click', closeNav);
+        navBackdrop.addEventListener('click', closeNav);
+
+        navPanel.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape') { e.preventDefault(); closeNav(); return; }
+          if (e.key !== 'Tab') return;
+          const focusables = Array.from(navPanel.querySelectorAll(FOCUSABLE)).filter(
+            function (el) { return el.offsetParent !== null; }
+          );
+          if (focusables.length === 0) return;
+          const first = focusables[0];
+          const last = focusables[focusables.length - 1];
+          if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+          else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+        });
+
+        window.addEventListener('resize', function () {
+          if (window.innerWidth >= 1024 && navToggle.getAttribute('aria-expanded') === 'true') closeNav();
+        });
+      }
+
+      /* --------------------- Before/After Comparators ---------------------- */
+      document.querySelectorAll('[data-ba]').forEach(function (root) {
+        const clip = root.querySelector('[data-ba-clip]');
+        const handle = root.querySelector('[data-ba-handle]');
+        const slider = handle && handle.querySelector('[role="slider"]');
+        if (!clip || !handle) return;
+
+        let dragging = false;
+
+        function applyPct(pct) {
+          const safe = Math.max(0, Math.min(100, pct));
+          clip.style.clipPath = 'polygon(0 0, ' + safe + '% 0, ' + safe + '% 100%, 0 100%)';
+          handle.style.left = safe + '%';
+          if (slider) {
+            slider.setAttribute('aria-valuenow', String(Math.round(safe)));
+            slider.setAttribute('aria-valuetext', 'Divider at ' + Math.round(safe) + ' percent');
+          }
+        }
+
+        function pctFromEvent(e) {
+          const rect = root.getBoundingClientRect();
+          const point = e.touches ? e.touches[0] : e;
+          return ((point.clientX - rect.left) / rect.width) * 100;
+        }
+
+        root.addEventListener('pointerdown', function (e) {
+          dragging = true;
+          handle.setAttribute('data-dragging', 'true');
+          applyPct(pctFromEvent(e));
+          if (root.setPointerCapture && e.pointerId != null) {
+            try { root.setPointerCapture(e.pointerId); } catch (_) {}
+          }
+        });
+
+        root.addEventListener('pointermove', function (e) {
+          if (!dragging) return;
+          applyPct(pctFromEvent(e));
+        });
+
+        function endDrag() {
+          dragging = false;
+          handle.removeAttribute('data-dragging');
+        }
+        root.addEventListener('pointerup', endDrag);
+        root.addEventListener('pointercancel', endDrag);
+        root.addEventListener('pointerleave', function () { if (!dragging) endDrag(); });
+
+        if (slider) {
+          slider.addEventListener('keydown', function (e) {
+            const current = parseFloat(slider.getAttribute('aria-valuenow') || '50');
+            let next = current;
+            if (e.key === 'ArrowLeft') next = current - 2;
+            else if (e.key === 'ArrowRight') next = current + 2;
+            else if (e.key === 'Home') next = 0;
+            else if (e.key === 'End') next = 100;
+            else return;
+            e.preventDefault();
+            applyPct(next);
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
